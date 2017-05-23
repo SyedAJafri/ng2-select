@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'single-demo',
@@ -19,6 +20,7 @@ export class SingleDemoComponent {
   private value:any = {};
   private _disabledV:string = '0';
   private disabled:boolean = false;
+  private singleControl:FormControl = new FormControl('', [Validators.required]);
 
   private get disabledV():string {
     return this._disabledV;
@@ -30,6 +32,7 @@ export class SingleDemoComponent {
   }
 
   public selected(value:any):void {
+    debugger;
     console.log('Selected value is: ', value);
   }
 

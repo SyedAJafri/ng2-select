@@ -2,9 +2,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
 import { TabsModule, ButtonsModule } from 'ng2-bootstrap';
-
-import { SelectModule } from 'ng2-select';
+import { SelectModule } from '../../../src/select/select.module';
 import { AppComponent } from './app.component';
 import { SelectSectionComponent } from './components/select-section';
 import { ChildrenDemoComponent } from './components/select/children-demo';
@@ -26,6 +26,7 @@ import { SampleSectionComponent } from './components/sample-section.component';
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     SelectModule,
     TabsModule.forRoot(),
     ButtonsModule.forRoot(),

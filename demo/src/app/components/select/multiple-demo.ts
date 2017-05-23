@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'multiple-demo',
@@ -18,6 +19,7 @@ export class MultipleDemoComponent {
   private value:any = ['Athens'];
   private _disabledV:string = '0';
   private disabled:boolean = false;
+  private control: FormControl = new FormControl('', [Validators.required]);
 
   private get disabledV():string {
     return this._disabledV;
