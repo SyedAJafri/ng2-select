@@ -1,6 +1,6 @@
 {
   "name": "ng-next-select",
-  "version": "1.3.2",
+  "version": "1.3.13",
   "peerDependencies": {
     "@angular/common": "*",
     "@angular/core": "*"
