@@ -54,6 +54,11 @@ Thanks for understanding!
 
 That's it
 
+# Help
+
+If you wish to contribute simply run `npm run startNoAot` for local development. 
+`demo/src/app/components` has a few components you can mess with. I'm pretty responsive and don't mind answering any questions.
+
 ### License
 
 The MIT License (see the [LICENSE](https://github.com/psilospore/ng-next-select/blob/master/LICENSE) file for the full text)
