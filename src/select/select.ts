@@ -486,7 +486,7 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
     }
   }
 
-  protected  mainClick(event:any):void {
+  protected mainClick(event:any):void {
     if (this.inputMode === true || this._disabled === true) {
       return;
     }
@@ -509,18 +509,21 @@ export class SelectComponent implements OnInit, ControlValueAccessor {
     let value = String
       .fromCharCode(96 <= event.keyCode && event.keyCode <= 105 ? event.keyCode - 48 : event.keyCode)
       .toLowerCase();
-    this.focusToInput(value);
-    this.open();
     let target = event.target || event.srcElement;
-    target.value = value;
+    this.open();
+    if (event.charCode !== 0) {
+      // Special case: onKeyDown or onKeyUp event - do not try to fill in the value
+      this.focusToInput(value);
+      target.value = value;
+    }
     this.inputEvent(event);
   }
 
-  protected  selectActive(value:SelectItem):void {
+  protected selectActive(value:SelectItem):void {
     this.activeOption = value;
   }
 
-  protected  isActive(value:SelectItem):boolean {
+  protected isActive(value:SelectItem):boolean {
     return this.activeOption.id === value.id;
   }
 
