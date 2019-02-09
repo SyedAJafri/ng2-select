@@ -6,6 +6,10 @@ This is a library based on a fork from [ng2-select](https://github.com/valor-sof
 We would love any PRs if you have enhancements in mind. We intend on maintaining this library for a while and in the event that our organization does not need this
 library anymore and/or we become too busy to maintain it we are open to adding other co-maintainers.
 
+Update: It seems that valor is maintaining ng-select again in a new repo: https://github.com/ng-select/ng-select
+
+I would recommend using that instead. I'm still open to adding another co-maintainer if anyone is interested.
+
 ## Quick start
 
 1. A recommended way to install ***ng-next-select*** is through [npm](https://www.npmjs.com/search?q=ng-next-select) package manager using the following command:
